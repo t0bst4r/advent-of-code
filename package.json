@@ -4,6 +4,8 @@
   "description": "advent-of-code",
   "main": "index.js",
   "scripts": {
+    "2022-01": "./run.sh 2022 01 1 && ./run.sh 2022 01 2",
+    "2022-02": "./run.sh 2022 02 1 && ./run.sh 2022 02 2"
   },
   "repository": {
     "type": "git",

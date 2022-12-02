@@ -1,6 +1,7 @@
 const fs = require("fs");
+const path = require("path");
 
-const content = fs.readFileSync("input.txt", "utf8");
+const content = fs.readFileSync(path.join(__dirname, "input.txt"), "utf8");
 
 const elves = content.replace(/\r\n/g, "\n").split(/\n\n/);
 
@@ -10,5 +11,4 @@ const ratioPerElf = elves
   .map(elf => elf.split("\n").reduce((prev, curr) => prev + parseInt(curr), 0))
   .sort((a, b) => b - a);
 
-console.log("Highest: " + ratioPerElf[0])
-console.log("Top three: " + (ratioPerElf[0] + ratioPerElf[1] + ratioPerElf[2]))
+console.log(ratioPerElf[0] + ratioPerElf[1] + ratioPerElf[2]);
