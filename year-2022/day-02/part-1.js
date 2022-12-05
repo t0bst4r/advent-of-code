@@ -1,6 +1,7 @@
 const fs = require("fs");
+const path = require("path");
 
-const input = fs.readFileSync("input.txt", "utf-8").replace(/\r\n/, "\n");
+const input = fs.readFileSync(path.join(__dirname, "input.txt"), "utf-8").replace(/\r\n/, "\n");
 const games = input.split("\n").filter(it => it.length);
 
 const inOutMap = {X: "A", Y: "B", Z: "C"};

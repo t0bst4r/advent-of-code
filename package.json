@@ -4,10 +4,11 @@
   "description": "advent-of-code",
   "main": "index.js",
   "scripts": {
-    "2022-01": "./run.sh 2022 01 1 && ./run.sh 2022 01 2",
-    "2022-02": "./run.sh 2022 02 1 && ./run.sh 2022 02 2",
-    "2022-03": "./run.sh 2022 03 1 && ./run.sh 2022 03 2",
-    "2022-04": "./run.sh 2022 04 1 && ./run.sh 2022 04 2"
+    "2022-01": "./run.js 2022 01 2>&1 | tee year-2022/day-01/log",
+    "2022-02": "./run.js 2022 02 2>&1 | tee year-2022/day-02/log",
+    "2022-03": "./run.js 2022 03 2>&1 | tee year-2022/day-03/log",
+    "2022-04": "./run.js 2022 04 2>&1 | tee year-2022/day-04/log",
+    "2022-05": "./run.js 2022 05 2>&1 | tee year-2022/day-05/log"
   },
   "repository": {
     "type": "git",
