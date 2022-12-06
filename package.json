@@ -8,7 +8,8 @@
     "2022-02": "./run.js 2022 02 2>&1 | tee year-2022/day-02/log",
     "2022-03": "./run.js 2022 03 2>&1 | tee year-2022/day-03/log",
     "2022-04": "./run.js 2022 04 2>&1 | tee year-2022/day-04/log",
-    "2022-05": "./run.js 2022 05 2>&1 | tee year-2022/day-05/log"
+    "2022-05": "./run.js 2022 05 2>&1 | tee year-2022/day-05/log",
+    "2022-06": "./run.js 2022 06 2>&1 | tee year-2022/day-06/log"
   },
   "repository": {
     "type": "git",
