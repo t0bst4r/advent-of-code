@@ -12,7 +12,8 @@
     "2022-06": "./run.js 2022 06 2>&1 | tee year-2022/day-06/log",
     "2022-09": "./run.js 2022 09 2>&1 | tee year-2022/day-09/log",
     "2022-10": "./run.js 2022 10 2>&1 | tee year-2022/day-10/log",
-    "2022-11": "./run.js 2022 11 2>&1 | tee year-2022/day-11/log"
+    "2022-11": "./run.js 2022 11 2>&1 | tee year-2022/day-11/log",
+    "2022-15": "./run.js 2022 15 2>&1 | tee year-2022/day-15/log",
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/t0bst4r/advent-of-code/issues"
   },
-  "homepage": "https://github.com/t0bst4r/advent-of-code#readme"
+  "homepage": "https://github.com/t0bst4r/advent-of-code#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.16"
+  }
 }
