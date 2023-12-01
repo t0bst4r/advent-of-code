@@ -1,31 +1,20 @@
 {
+  "private": true,
+  "author": "t0bst4r",
   "name": "advent-of-code",
-  "version": "1.0.0",
   "description": "advent-of-code",
-  "main": "index.js",
+  "version": "1.0.0",
   "scripts": {
-    "2022-01": "./run.js 2022 01 2>&1 | tee year-2022/day-01/log",
-    "2022-02": "./run.js 2022 02 2>&1 | tee year-2022/day-02/log",
-    "2022-03": "./run.js 2022 03 2>&1 | tee year-2022/day-03/log",
-    "2022-04": "./run.js 2022 04 2>&1 | tee year-2022/day-04/log",
-    "2022-05": "./run.js 2022 05 2>&1 | tee year-2022/day-05/log",
-    "2022-06": "./run.js 2022 06 2>&1 | tee year-2022/day-06/log",
-    "2022-09": "./run.js 2022 09 2>&1 | tee year-2022/day-09/log",
-    "2022-10": "./run.js 2022 10 2>&1 | tee year-2022/day-10/log",
-    "2022-11": "./run.js 2022 11 2>&1 | tee year-2022/day-11/log",
-    "2022-15": "./run.js 2022 15 2>&1 | tee year-2022/day-15/log",
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/t0bst4r/advent-of-code.git"
   },
-  "author": "t0bst4r",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/t0bst4r/advent-of-code/issues"
   },
   "homepage": "https://github.com/t0bst4r/advent-of-code#readme",
   "devDependencies": {
-    "@types/node": "^18.11.16"
+    "@types/node": "^20.10.1"
   }
 }
