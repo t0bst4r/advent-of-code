@@ -1,4 +1,5 @@
 const fs = require("fs");
+const {lcm} = require("../../algorithms/lowest-common-multiple");
 
 function readInput(file) {
   const nodeRegex = /^(\w+) = \((\w+), (\w+)\)$/
@@ -33,12 +34,6 @@ function findPathLength02({instructions, nodes}) {
     .map(it => findPathLength01({instructions, nodes}, it, a => !a.endsWith("Z")));
   return lcm(...lengths);
 }
-
-const lcm = (...arr) => {
-  const gcd = (x, y) => (!y ? x : gcd(y, x % y));
-  const _lcm = (x, y) => (x * y) / gcd(x, y);
-  return [...arr].reduce((a, b) => _lcm(a, b));
-};
 
 function exec(name, file1, file2) {
   const input01 = readInput(file1);
