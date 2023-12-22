@@ -1,11 +1,11 @@
 /**
  * @param {Array} startNodes
- * @param {(node: any) => number} getWeight
  * @param {(node: any) => Array} getNeighbors
+ * @param {(node: any) => number} [getWeight]
  * @param {(node: any) => boolean} [isDone]
  * @returns {{distances: Map<any, number>, previousNodes: Map<any, any>}}
  */
-function dijkstra(startNodes, getWeight, getNeighbors, isDone) {
+function dijkstra(startNodes, getNeighbors, getWeight, isDone) {
   const distances = new Map();
   const previousNodes = new Map();
   const queue = [];
@@ -24,7 +24,8 @@ function dijkstra(startNodes, getWeight, getNeighbors, isDone) {
     }
     getNeighbors(current)
       .forEach(next => {
-        const distance = distances.get(current) + getWeight(next);
+        const weight = getWeight ? getWeight(next) : 1;
+        const distance = distances.get(current) + weight;
         const nextDistance = distances.get(next) ?? Infinity;
         if (distance < nextDistance) {
           distances.set(next, distance);

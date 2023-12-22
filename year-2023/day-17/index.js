@@ -52,7 +52,7 @@ function solve(grid, minimum, maximum) {
   const startNodes = [`${startNode.x},${startNode.y},0,1`, `${startNode.x},${startNode.y},1,1`];
   const getWeight = node => getNodeInfo(node, grid).heatLoss;
   const getNeighbors = node => generateNeighbors(node, grid, minimum, maximum)
-  const {distances} = dijkstra(startNodes, getWeight, getNeighbors);
+  const {distances} = dijkstra(startNodes, getNeighbors, getWeight);
   return findShortestAllowedDistance(distances, endNode, minimum);
 }
 
